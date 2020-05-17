@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>checkbox | w-element</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="基于elementui的组件库文档">
+    <link rel="preload" href="/w-element/assets/css/0.styles.4d970416.css" as="style"><link rel="preload" href="/w-element/assets/js/app.542c44d9.js" as="script"><link rel="preload" href="/w-element/assets/js/2.1b548c35.js" as="script"><link rel="preload" href="/w-element/assets/js/11.2b0be139.js" as="script"><link rel="preload" href="/w-element/assets/js/7.34da49c6.js" as="script"><link rel="prefetch" href="/w-element/assets/js/10.022c33b1.js"><link rel="prefetch" href="/w-element/assets/js/12.0d00ab33.js"><link rel="prefetch" href="/w-element/assets/js/3.1bc3abe1.js"><link rel="prefetch" href="/w-element/assets/js/4.f65f3aff.js"><link rel="prefetch" href="/w-element/assets/js/5.54b136bd.js"><link rel="prefetch" href="/w-element/assets/js/6.fcb21a78.js"><link rel="prefetch" href="/w-element/assets/js/8.2571db5a.js"><link rel="prefetch" href="/w-element/assets/js/9.9131e233.js">
+    <link rel="stylesheet" href="/w-element/assets/css/0.styles.4d970416.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/w-element/" class="home-link router-link-active"><!----> <span class="site-name">w-element</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/w-element/pages/guide/" class="nav-link router-link-active">
+  指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/w-element/pages/guide/" class="nav-link router-link-active">
+  指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>组件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/w-element/pages/guide/button.html" class="sidebar-link">button</a></li><li><a href="/w-element/pages/guide/checkbox.html" class="active sidebar-link">checkbox</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>checkbox与select的选项值类似,同样配置options属性,可配置对象也可配置数组</p> <div class="demo-block demo-zh demo-checkbox.html"><div class="source"></div> <div class="meta"><div class="description"><form slot="source" class="el-form el-form--label-right" data-v-830c86ba><div class="el-form-item el-form-item--small" data-v-830c86ba><label for="city" class="el-form-item__label" style="width:120px;">城市：</label><div class="el-form-item__content" style="margin-left:120px;"><div role="group" aria-label="checkbox-group" class="el-checkbox-group"><label role="checkbox" class="el-checkbox-button el-checkbox-button--small"><input type="checkbox" value="beijing" class="el-checkbox-button__original"><span class="el-checkbox-button__inner">北京</span></label><label role="checkbox" class="el-checkbox-button el-checkbox-button--small"><input type="checkbox" value="shanghai" class="el-checkbox-button__original"><span class="el-checkbox-button__inner">上海</span></label><label role="checkbox" class="el-checkbox-button el-checkbox-button--small"><input type="checkbox" value="guangzhou" class="el-checkbox-button__original"><span class="el-checkbox-button__inner">广州</span></label><label role="checkbox" class="el-checkbox-button el-checkbox-button--small"><input type="checkbox" value="shenzhen" class="el-checkbox-button__original"><span class="el-checkbox-button__inner">深圳</span></label></div><!----></div></div> <p data-v-830c86ba>您选中城市的值是：[]</p></form> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span>
+    <span class="token attr-name">:model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">label-position</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">label-suffix</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>：<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">label-width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>120px<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>w-checkbox</span>
+      <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>城市<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>city<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>options2<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">radio-button</span>
+      <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form.city<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>w-checkbox</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>您选中城市的值是：{{form.city}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'checkbox-demo-01'</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      form<span class="token operator">:</span> <span class="token punctuation">{</span>
+        city<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">options1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'男'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'女'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">options2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'北京'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'beijing'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'上海'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'shanghai'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'广州'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'guangzhou'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> label<span class="token operator">:</span> <span class="token string">'深圳'</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">'shenzhen'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></code></pre></div></div> <div class="highlight"></div></div> <div class="demo-block-control"><i class="el-icon-caret-bottom"></i> <span style="display:none;">显示代码</span></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/w-element/pages/guide/button.html" class="prev">
+        button
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/w-element/assets/js/app.542c44d9.js" defer></script><script src="/w-element/assets/js/2.1b548c35.js" defer></script><script src="/w-element/assets/js/11.2b0be139.js" defer></script><script src="/w-element/assets/js/7.34da49c6.js" defer></script>
+  </body>
+</html>
