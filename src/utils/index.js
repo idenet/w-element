@@ -30,3 +30,13 @@ export function debounce(fn, wait = 500, isImmediate = true) {
     }, wait)
   }
 }
+
+export function isArray(v) {
+  return typeof Array.isArray === 'function'
+    ? Array.isArray(v)
+    : Object.prototype.toString.call(v) === '[object Array]'
+}
+
+export function isPlainObject(val) {
+  return toString.call(val) === '[object Object]'
+}

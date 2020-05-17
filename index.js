@@ -1,6 +1,7 @@
 import WButton from './src/components/button/button'
+import WCheckbox from './src/components/checkbox/checkbox'
 
-const components = [WButton]
+const components = [WButton, WCheckbox]
 
 const WElement = {
   install: function(Vue) {

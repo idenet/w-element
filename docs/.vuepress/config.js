@@ -1,6 +1,7 @@
 module.exports = {
   base: '/w-element/',
   dest: './dist',
+  port: 9090,
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -28,7 +29,7 @@ module.exports = {
           title: '组件',
           collapsable: true,
           sidebarDepth: 1,
-          children: ['button'],
+          children: ['button', 'checkbox'],
         },
       ],
     },

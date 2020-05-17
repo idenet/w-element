@@ -18,9 +18,23 @@ sidebarDepth: 2
 
 自动添加 loading 效果,方便点击处理事件
 
+<demo-block>
+<button-demo-02 slot="source"></button-demo-02>
+
+<<< docs/.vuepress/components/button/demo-02.vue
+
+</demo-block>
+
 ## 操作确认
 
-有时候我们点击按钮需弹窗确认后方可继续,`pl-button`封装了这个步骤
+有时候我们点击按钮需弹窗确认后方可继续,`w-button`封装了这个步骤
+
+<demo-block>
+<button-demo-03 slot="source"></button-demo-03>
+
+<<< docs/.vuepress/components/button/demo-03.vue
+
+</demo-block>
 
 ## Attributes
 
