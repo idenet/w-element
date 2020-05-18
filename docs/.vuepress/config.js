@@ -46,7 +46,7 @@ module.exports = {
           title: '组件',
           collapsable: true,
           sidebarDepth: 1,
-          children: ['button', 'checkbox', 'date'],
+          children: ['button', 'checkbox', 'date', 'input'],
         },
       ],
     },

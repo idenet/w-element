@@ -3,7 +3,7 @@ title: checkbox
 sidebarDepth: 2
 ---
 
-checkbox 与 select 的选项值类似,同样配置 options 属性,可配置对象也可配置数组
+## checkbox 
 
 <demo-block>
 
