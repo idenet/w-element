@@ -3,7 +3,7 @@ title: checkbox
 sidebarDepth: 2
 ---
 
-checkbox与select的选项值类似,同样配置options属性,可配置对象也可配置数组
+checkbox 与 select 的选项值类似,同样配置 options 属性,可配置对象也可配置数组
 
 <demo-block>
 
@@ -12,3 +12,11 @@ checkbox与select的选项值类似,同样配置options属性,可配置对象也
 <<< docs/.vuepress/components/checkbox/demo-01.vue
 
 </demo-block>
+
+## Attributes
+
+|        参数 |             说明              |         类型 |        默认值 |
+| ----------: | :---------------------------: | -----------: | ------------: |
+|     options |      传入的对象或者数组       | array/object |            -- |
+| optionsAttr |       对象数组中的属性        |       string | 'label,value' |
+| radioButton | 是 button 形式还是 radio 形式 |      boolean |         false |

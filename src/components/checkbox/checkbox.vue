@@ -6,14 +6,23 @@
     :rules="rules"
     v-bind="{...formItemAttrs}"
   >
-    <el-checkbox-group v-model="selectedValue" v-on="$listeners">
+    <el-checkbox-group v-model="selectedValue">
       <template v-for="item in optionsList">
         <el-checkbox-button
           v-if="radioButton"
+          :true-label="item.value"
+          :false-label="item.value"
           :label="item.value"
           :key="item.value"
+          @change="change"
         >{{item.label}}</el-checkbox-button>
-        <el-checkbox v-else :label="item.value" :key="item.value">{{item.label}}</el-checkbox>
+        <el-checkbox
+          v-else
+          :label="item.value"
+          :true-label="item.value"
+          :false-label="item.value"
+          :key="item.value"
+        >{{item.label}}</el-checkbox>
       </template>
     </el-checkbox-group>
   </el-form-item>
@@ -75,10 +84,18 @@ export default {
     }
   },
   methods: {
-    // handleChange(val) {
-    //   this.$emit('change', val)
-    //   this.$emit('input', val)
-    // },
+    change(val) {
+      let index = this.value.indexOf(val)
+      if (index !== -1) {
+        this.value.splice(index, 1)
+      } else {
+        this.value.push(val)
+      }
+    },
+    handleChange(val) {
+      this.$emit('change', val)
+      this.$emit('input', val)
+    },
     init() {
       this.selectedValue = this.value || []
     }
@@ -129,7 +146,7 @@ export default {
   watch: {
     value: {
       immediate: true,
-      handler() {
+      handler(val) {
         this.init()
       }
     }
