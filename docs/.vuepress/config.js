@@ -46,7 +46,7 @@ module.exports = {
           title: '组件',
           collapsable: true,
           sidebarDepth: 1,
-          children: ['button', 'checkbox'],
+          children: ['button', 'checkbox', 'date'],
         },
       ],
     },
@@ -57,17 +57,5 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  plugins: [
-    [
-      'demo-code',
-      {
-        jsLibs: [
-          // umd
-          'https://unpkg.com/element-ui/lib/index.js',
-          'https://unpkg.com/vue/dist/vue.js',
-        ],
-        cssLibs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
-      },
-    ],
-  ],
+  plugins: [],
 }

@@ -75,10 +75,10 @@ export default {
     }
   },
   methods: {
-    handleChange(val) {
-      this.$emit('change', val)
-      this.$emit('input', val)
-    },
+    // handleChange(val) {
+    //   this.$emit('change', val)
+    //   this.$emit('input', val)
+    // },
     init() {
       this.selectedValue = this.value || []
     }
