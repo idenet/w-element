@@ -3,8 +3,10 @@ import WCheckbox from './src/components/checkbox/checkbox'
 import WDate from './src/components/date/date'
 import WInput from './src/components/input/input'
 import WRadio from './src/components/radio/radio'
+import WSwitch from './src/components/switch/switch'
+import WSelect from './src/components/select/select'
 
-const components = [WButton, WCheckbox, WDate, WInput, WRadio]
+const components = [WButton, WCheckbox, WDate, WInput, WRadio, WSwitch, WSelect]
 
 const WElement = {
   install: function(Vue) {

@@ -49,10 +49,11 @@ module.exports = {
           children: [
             'button',
             'checkbox',
-            'date',
+            // 'date',
             'input',
             'radio',
-            // 'select',
+            'select',
+            'switch',
             // 'form',
             // 'table',
           ],
