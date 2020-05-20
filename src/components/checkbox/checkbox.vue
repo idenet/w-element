@@ -42,7 +42,11 @@ export default {
       type: String,
       default: ''
     },
-    value: { default: '' },
+    value: {
+      default() {
+        return []
+      }
+    },
     labelWidth: {
       type: [String, Number],
       default: ''

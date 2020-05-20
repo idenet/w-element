@@ -13,6 +13,7 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     [
@@ -20,6 +21,7 @@ module.exports = {
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
     ],
     ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
     [
       'link',
       {
@@ -54,7 +56,7 @@ module.exports = {
             'radio',
             'select',
             'switch',
-            // 'form',
+            'form',
             // 'table',
           ],
         },

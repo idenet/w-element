@@ -1,10 +1,10 @@
 /**
  * 扩展 VuePress 应用
  */
-import VueHighlightJS from 'vue-highlight.js'
-import 'highlight.js/styles/atom-one-dark.css'
+// import VueHighlightJS from 'vue-highlight.js'
+// import 'highlight.js/styles/atom-one-dark.css'
 import Element from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import 'element-ui/lib/theme-chalk/index.css'
 import WElement from '../../index'
 import demoBlock from './components/demo-block.vue'
 

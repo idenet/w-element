@@ -88,7 +88,6 @@ export default {
       if (isArray(this.options)) {
         if (this.valueKey) {
           const list = this.options.map(item => {
-            console.log({ ...item })
             return {
               label: item[this.valueLabel],
               value: { ...item }
