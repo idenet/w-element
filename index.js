@@ -6,6 +6,7 @@ import WRadio from './src/components/radio/radio'
 import WSwitch from './src/components/switch/switch'
 import WSelect from './src/components/select/select'
 import WForm from './src/components/form/form'
+import WTable from './src/components/table/table'
 
 const components = [
   WButton,
@@ -16,6 +17,7 @@ const components = [
   WSwitch,
   WSelect,
   WForm,
+  WTable,
 ]
 
 const WElement = {

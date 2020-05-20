@@ -44,7 +44,7 @@ sidebarDepth: 2
 | isSearchForm | 判断是否是表格的搜索`form` | boolean | false  |
 | formItems    | 表单元素的对象格式         | object  |        |
 | cols         | 用于栅格布局               | array   |        |
-| rules        | B 自定义的校验规则         | array   |        |
+| rules        | 自定义的校验规则           | array   |        |
 
 ## formItems
 

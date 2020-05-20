@@ -57,7 +57,7 @@ module.exports = {
             'select',
             'switch',
             'form',
-            // 'table',
+            'table',
           ],
         },
       ],
