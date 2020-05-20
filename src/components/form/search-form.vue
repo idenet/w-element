@@ -1,5 +1,5 @@
 <template>
-  <el-form :model="form" v-bind="$attrs" ref="plForm">
+  <el-form :model="form" v-bind="$attrs" ref="wForm">
     <template v-for="(item,index) in formItems">
       <template>
         <form-item-grid :key="index" :cols="item.cols" :item="item">
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     submitForm() {
-      this.$refs.plForm
+      this.$refs.wForm
         .validate()
         .then(() => {
           this.$emit('submit', this.form)
@@ -63,7 +63,7 @@ export default {
         })
     },
     resetForm() {
-      this.$refs.plForm.resetFields()
+      this.$refs.wForm.resetFields()
     }
   },
   computed: {},
