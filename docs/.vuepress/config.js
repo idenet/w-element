@@ -42,26 +42,27 @@ module.exports = {
     // 自定义仓库链接文字。
     repoLabel: '仓库地址',
     nav: [{ text: '指南', link: '/pages/guide/' }],
-    sidebar: {
-      '/pages/guide/': [
-        {
-          title: '组件',
-          collapsable: true,
-          sidebarDepth: 1,
-          children: [
-            'button',
-            'checkbox',
-            // 'date',
-            'input',
-            'radio',
-            'select',
-            'switch',
-            'form',
-            'table',
-          ],
-        },
-      ],
-    },
+    sidebar: [
+      {
+        title: '组件',
+        children: [
+          '/pages/guide/',
+          '/pages/guide/button',
+          '/pages/guide/checkbox',
+          // 'date',
+          '/pages/guide/input',
+          '/pages/guide/radio',
+          '/pages/guide/select',
+          '/pages/guide/switch',
+          '/pages/guide/form',
+          '/pages/guide/table',
+        ],
+      },
+      {
+        title: '工具',
+        children: ['/pages/common/', '/pages/common/commonMixins'],
+      },
+    ],
   },
   cache: false,
   title: 'w-element',
@@ -69,5 +70,16 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  plugins: [],
+  plugins: [
+    '@vuepress/back-to-top',
+    [
+      '@vuepress/pwa',
+      {
+        updatePopup: {
+          message: '发现新内容可用',
+          buttonText: '刷新',
+        },
+      },
+    ],
+  ],
 }
